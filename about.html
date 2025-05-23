@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обо мне | Burnglacier</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, #000000 0%, #6a11cb 100%);
+      animation: rotate 30s linear infinite;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    nav {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* 📱 Адаптация для телефона */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="page2.html">Портфолио</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+
+  <header>
+    <h1>Обо мне</h1>
+    <p>Burnglacier — это не просто ник, это путь. Здесь немного больше, чем просто «обо мне».</p>
+  </header>
+
+  <section>
+    <p>Я обычный парень, который живет в Европе. Мне 21. Я мечтаю о семье, собственном доме, машине и бизнесе. Очень хочу найти баланс между стабильностью и свободой.</p>
+    <p>В душе я человек справедливый, задумчивый, добрый и немного одиночка. Ценю тишину, честность и глубину. Порой сложно справляться с рутиной, но я иду вперёд — шаг за шагом. Учусь веб-разработке, хочу зарабатывать головой и творчеством, а не только руками. Всё это — часть моей истории, и ты сейчас на её странице.</p>
+    <p>Burnglacier — это холод снаружи и огонь внутри.</p>
+  </section>
+</body>
+</html>
